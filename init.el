@@ -363,8 +363,7 @@ Usage:
   :commands (helpful-callable helpful-variable helpful-command helpful-key)
   :custom
   (counsel-describe-function-function #'helpful-callable)
-  (counsel-describe-variable-function #'helpful-variable)
-  )
+  (counsel-describe-variable-function #'helpful-variable))
 
 (defun efs/org-font-setup ()
   ;; Replace list hyphen with dot
@@ -413,9 +412,9 @@ Usage:
   (setq org-log-into-drawer t)
 
   (setq org-agenda-files
-        '("~/Projects/Code/emacs-from-scratch/OrgFiles/Tasks.org"
-          "~/Projects/Code/emacs-from-scratch/OrgFiles/Habits.org"
-          "~/Projects/Code/emacs-from-scratch/OrgFiles/Birthdays.org"))
+        '("~/Dropbox/Documents/notes/Tasks.org"
+          "~/Dropbox/Documents/notes/Habits.org"
+          "~/Dropbox/Documents/notes/Birthdays.org"))
 
   (require 'org-habit)
   (add-to-list 'org-modules 'org-habit)
